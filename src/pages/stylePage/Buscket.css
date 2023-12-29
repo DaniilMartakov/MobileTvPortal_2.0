@@ -1,0 +1,170 @@
+@media screen and (max-width: 768px) {
+
+.buscket-name{
+    color: #133888;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+
+/* стили для корзины */
+.card-body-basket{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 3%;
+    font-weight: 600;
+    color: #03256C;
+    background-color: #e5f4fb89;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px 0px #133888;
+
+}
+
+.basket-title{
+    font-size: 25px;
+    font-weight: 500;
+    color: #133888;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    text-align: center;
+    padding: 4% 0% 3% 0%;
+    margin: 0;
+}
+
+.btn-basket{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;     
+    color:#133888;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #f5ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(23, 23, 23) solid ;  
+    box-shadow: 1px 1px 0px 0px #133888;
+}
+.btn-basket:active{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;     
+    color: #133888;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #cdfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(23, 23, 23) solid ;  
+    box-shadow: 1px 1px 0px 0px #133888;
+}
+
+.total-price-basket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;     
+    color:#133888;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #f5ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(23, 23, 23) solid ; 
+    box-shadow: 1px 1px 0px 0px #133888;
+
+}
+
+
+.basket-empty{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #133888;
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+
+
+.basket-order{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+.title-order{
+    font-size:22px;
+    font-weight: 300;
+    color: #133888;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+    margin: 0;
+
+}
+.card-title-basket{
+    font-size: 19px;
+    font-weight: 400;
+    color: #133888;
+    margin: 0;
+    text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+
+.btn-order{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    margin: 0;     
+    color:#133888;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #f5ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(23, 23, 23) solid ; 
+    box-shadow: 1px 1px 0px 0px #133888;
+}
+.btn-order:active{
+    width: 100%;
+    font-size: 17px;
+    height: 60px;
+    margin: 0;     
+    color: #133888;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #e5f4fb89;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(23, 23, 23) solid ; 
+}
+.price-basket{
+    margin: 0;
+}
+}
+@media screen and (min-width: 768px)  and (max-width: 2400px) {
+
+
+}

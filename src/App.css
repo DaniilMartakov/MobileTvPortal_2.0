@@ -1,0 +1,70 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body{
+  font-family: system-ui;
+  background-image: url('../public/img/12.jpeg');
+  background-size: 1170px 2532px;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 768px){
+  /* Стили для экранов шириной не более 768px */
+#root {
+    max-width: 1000px;
+    margin: 20px auto 60px auto;
+}
+  
+#ship{
+  position:fixed;
+  bottom: 0px;
+  left: 0px;
+  opacity:0.3;
+  z-index: -1; 
+  transform: scaleX(-1);
+}
+}
+@media screen and (min-width: 768px)  and (max-width: 1025px){
+  #ship{
+  width: 800px;
+  position:fixed;
+  bottom: 0px;
+  right: -100px;
+  opacity:0.3;
+  z-index: -1; 
+  transform: scaleX(-1);
+  filter: drop-shadow(3px 3px 5px);
+  }
+#root {
+    margin: 30px auto 100px auto;
+}
+  
+}
+@media screen and (min-width: 1026px) and (max-width: 2400px) {
+  #ship{
+    width: 800px;
+    position:fixed;
+    bottom: -20px;
+    right: -20px;
+    opacity:0.3;
+    z-index: -1; 
+    transform: scaleX(-1);
+    filter: drop-shadow(3px 3px 5px);
+    }
+
+    #root {
+      margin: 30px auto 100px auto;
+  }
+}

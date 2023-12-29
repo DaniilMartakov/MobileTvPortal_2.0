@@ -1,0 +1,32 @@
+{
+  "name": "Intronex TV Portal",
+  "short_name": "TV Portal",
+  "description": "Надо подумать над описанием",
+  "orientation": "portrait-primary",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "icons/favicon.ico",
+      "type": "image/ico",
+      "sizes": "16x16",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/ship.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

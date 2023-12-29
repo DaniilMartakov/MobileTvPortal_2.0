@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="%PUBLIC_URL%/icons/ship.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#000000"/>
+  <meta name="description" content="Web site created using create-react-app"/>
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/ship.png"/>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Skranji&family=Sofia+Sans:wght@300;500;700&family=Unbounded:wght@700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <title>Intronex TV Portal</title>
+</head>
+<body>
+<noscript>Необходимо включить использование JavaScript на странице</noscript>
+  <div id="root"></div>
+</body>
+
+<script>
+  window.addEventListener("load", async (e) => {
+    if ("serviceWorker" in navigator) {
+      try {
+        navigator.serviceWorker.register("sw.js").then((registration) => {
+          return registration.pushManager.getSubscription().then(async (subscription) => {
+            console.log("ServiceWorker registration successful with scope: ", registration.scope);
+          });
+        }).then((subscription) => {});
+        console.log("SW registered");
+      } catch (error) {
+        console.log("SW failed");
+      }
+    }
+    // Notification.requestPermission(function (status) {
+    //     console.log('Notification permission status:', status);
+    // }).then(() => {
+    // });
+  });
+</script>
+</html>

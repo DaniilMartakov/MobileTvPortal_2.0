@@ -1,0 +1,142 @@
+@media screen and (max-width: 768px) {
+
+.modalka{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1051;
+}
+.modalka.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal__content{
+    border-radius: 5px;
+    background-color: #e5f4fb;
+    width: 97%;
+    transform: scale(0.2s);
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal__content.active{
+    transform: scale(1);
+}
+.modal__title{
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: #133888;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal__text{
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 15px;
+    color: #133888;
+    font-weight: 500;
+    font-size: 21px;
+}
+.modalka-title{
+    margin:0;
+    font-size:26px;
+    margin-bottom: 10px;
+}
+.modal-desc{
+    max-height: 300px;
+    overflow: auto; 
+    font-weight: 600;
+}
+.modal-img{
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 0.5px black solid;
+    box-shadow: 2px 2px 0px 0px #133888;
+}
+}
+/* #e5f4fb */
+@media screen and (min-width: 768px)  and (max-width: 2400px) {
+.modalka{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1051;
+}
+.modalka.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal__content{
+    border-radius: 5px;
+    background-color: #e5f4fb;
+    width: 97%;
+    transform: scale(0.2s);
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal__content.active{
+    transform: scale(1);
+}
+.modal__title{
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: #03256C;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal__text{
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 15px;
+    color: #03256C;
+    font-weight: bold;
+    font-size: 31px;
+}
+.modalka-title{
+    font-size:36px;
+    margin-bottom: 20px;
+}
+.modal-desc{
+    max-height: 400px;
+    overflow: auto; 
+    font-weight: 600;
+}
+.modal-img{
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px black solid;
+}
+}

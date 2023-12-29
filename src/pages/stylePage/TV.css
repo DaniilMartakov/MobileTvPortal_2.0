@@ -1,0 +1,181 @@
+@media screen and (max-width: 768px){
+
+/* заголовок страницы */
+.tv-name{
+  margin-bottom: 5%;
+  color: #133888;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+  /* стили для категорий */
+.category-film {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x:scroll ;
+  height: 130px;
+  margin-bottom: 10px;
+}
+.category-name-film{
+  background-color: #1768AC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 140px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+  height: 95%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  padding-top: 3%;
+}
+.category-name-film:first-child{
+  border-left: 2px solid black;
+}
+.category-name-film--active{
+  background-color: #0e3a97;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 140px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+  height: 95%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  padding-top: 3%;
+}
+.img-gategory-film{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+  /* заголовок для категорий */
+.div-card-film{
+  display: flex;
+  justify-content: center;
+}
+.p-card-film{
+  font-size: 25px;
+  font-weight: bold;
+  color:#1768AC;
+  text-shadow: 0.5px 0.5px 0.5px #000;
+  text-align: center;
+  padding: 5% 0% 2% 0%;
+}
+.p-category-films{
+  font-size:12px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0;
+  color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+  /* общий див для  всех фильмов */
+.grid-films{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+
+
+}
+  /* стили для одной карточки */
+.card-films{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px #133888 solid;
+  border-radius: 3px;
+  box-shadow: 0px 2px 0px 0px #133888;
+}
+.card-title{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #03256C;
+  margin: 0;
+  padding: 10px;
+}
+.card-img-film{
+  width: 100%; 
+  height: 250px;
+  margin: 0;
+  object-fit: fill;
+  border-radius: 3px 3px 0px 0px;
+  border: 1px #133888 solid; 
+}
+.tv-search-div{
+  display: flex;
+  margin-bottom: 25px;
+}
+.tv-select{
+  font-size: 20px;
+  font-weight: 500;
+  height:40px;
+  color: #133888;
+  background-color: #f5ffff ;
+  border-radius: 3px ;
+  border: 1px #133888 solid;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow: 1px 1px 0px 0px #133888;
+  width: 100%;
+}
+.tv-select:focus{
+  outline: none;
+}
+/* стили для input */
+.btnbtn{
+  padding: 5px;
+  font-size: 20px;
+  background-color: #f5ffff;
+  color: #133888;
+  font-weight: 500;
+  border-radius: 3px;
+  height: 40px;
+  border: 1px #133888 solid;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0;
+  box-shadow: 1px 1px 0px 0px #133888;
+}
+.input-tv{
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #f5ffff;
+  color: #133888;
+  font-weight: 500;
+  border-radius: 0px;
+  height: 40px;
+  border: 1px #133888 solid;
+  border-left: 0px;
+  box-shadow: 1px 1px 0px 0px #133888;
+}
+.input-tv::placeholder{
+  color: #133888;
+}
+.input-tv:focus {
+  outline:none;
+}
+}
+@media screen and (min-width: 768px)  and (max-width: 2400px) {
+}
