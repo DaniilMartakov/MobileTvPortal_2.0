@@ -1,4 +1,3 @@
-import {FooterNavigation} from "../components/Footer_navigation/FooterNavigation";
 import React, { useEffect } from "react";
 import {Container} from "react-bootstrap";
 import './stylePage/Main.css'
@@ -108,7 +107,6 @@ export default function MainPage() {
             </div>
         </div>
         </Container>
-        {/* <FooterNavigation /> */}
     </>
     )
 }

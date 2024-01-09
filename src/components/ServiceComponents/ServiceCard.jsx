@@ -50,16 +50,16 @@ export default function ServiceCard({item }) {
           </div>
             <Modal active={modalActive} setActive={setModalActive} item={item} name={item.title} count={count}/>
         </div>
-          <div className='div-count-service'>
-            <div className='card-body-count-service'>
-              <button className="btn-count" onClick={decrement} style={{paddingLeft : '10px' , paddingRight: '10px', paddingBottom: '5px'}}> - </button>
-              <h3 className='count-service'>{count}</h3>
-              <button className="btn-count" onClick={increment} style={{paddingLeft : '10px' , paddingRight: '10px',paddingBottom: '4px'}} > + </button>          
-              <button className="btn-service" onClick={addBasket}>
-              <FontAwesomeIcon  icon={faBasketShopping} />
-              </button>
-            </div>
+        <div className='div-count-service'>
+          <div className='card-body-count-service'>
+            <button className="btn-count" onClick={decrement} style={{paddingLeft : '10px' , paddingRight: '10px', paddingBottom: '5px'}}> - </button>
+            <h3 className='count-service'>{count}</h3>
+            <button className="btn-count" onClick={increment} style={{paddingLeft : '10px' , paddingRight: '10px',paddingBottom: '4px'}} > + </button>          
+            <button className="btn-service" onClick={addBasket}>
+            <FontAwesomeIcon  icon={faBasketShopping} />
+            </button>
           </div>
+        </div>
     </div>
   </>
   )

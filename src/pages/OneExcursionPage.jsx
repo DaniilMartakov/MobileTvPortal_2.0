@@ -50,7 +50,6 @@ export default function OneExcursionPage() {
   return (
     <>
     <BackButton/>
-    {/* <BasketButton basket={basket}/> */}
     <div>
       <div>
         <h1 className='title-excursion'>ЭКСКУРСИИ</h1>

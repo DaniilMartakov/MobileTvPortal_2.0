@@ -11,14 +11,13 @@ export default function Search({handleSearch}) {
   return (
     <>
       <button className='btnbtn'>🔍</button>
-    <input
-      type="text"
-      placeholder="Поиск..."
-      value={searchTerm}
-      onChange={handleChange}
-      className='input-tv'
-    />
+      <input
+        type="text"
+        placeholder="Поиск..."
+        value={searchTerm}
+        onChange={handleChange}
+        className='input-tv'
+      />
     </>
   );
-
 }

@@ -43,49 +43,48 @@ export default function PaidExcursion({item}) {
       <h5 className='title-excursion-pf'>{item.name}</h5>
       <p className='description-excursion-pf'> {formattedText1}</p>
       <table className='table-excursion'>
-      <thead>
-        <tr className='tr-excursion'>
-          <th>Группа :</th>
-          <th>Цена :</th>
-        </tr>
-      </thead>
-      <tbody>
-        {item?.prices?.map((e) => (
-          <tr key={e?.min_count}  className='tr-excursion' >
-            <td>
-              <div className='td-table' >
-            <img className='count-img' src={item.group_image}   alt='!#'/>
-            <p style={{margin: '0px', fontWeight: '700'}}>{e.min_count} человек</p>
-              </div>
-            </td>
-            <td>
-            <div className='td-table'>
-            <img className='count-img' src={item.cost_image} alt='!#'/>
-            <p style={{margin: '0px', fontWeight: '700'}}>{e.price}₽</p>
-            </div>
-            </td>
+        <thead>
+          <tr className='tr-excursion'>
+            <th>Группа :</th>
+            <th>Цена :</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
-    <div style={{marginTop: '15px'}}>
-      <div style={{display: 'flex', marginTop: '10px', alignItems: 'center'}}>
-        <label className='label-excursion'>Количество человек : </label>
-        <input  style={{width: '60px', fontSize: '20px', fontWeight: '600', color: '#133888' , backgroundColor: '#f5ffff' , borderRadius: '3px' , border: '1px #133888 solid'}}type="number" value={quantity} onChange={handleQuantityChange} />
+        </thead>
+        <tbody>
+          {item?.prices?.map((e) => (
+            <tr key={e?.min_count}  className='tr-excursion' >
+              <td>
+                <div className='td-table' >
+              <img className='count-img' src={item.group_image}   alt='!#'/>
+              <p style={{margin: '0px', fontWeight: '700'}}>{e.min_count} человек</p>
+                </div>
+              </td>
+              <td>
+              <div className='td-table'>
+              <img className='count-img' src={item.cost_image} alt='!#'/>
+              <p style={{margin: '0px', fontWeight: '700'}}>{e.price}₽</p>
+              </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div style={{marginTop: '15px'}}>
+        <div style={{display: 'flex', marginTop: '10px', alignItems: 'center'}}>
+          <label className='label-excursion'>Количество человек : </label>
+          <input  style={{width: '60px', fontSize: '20px', fontWeight: '600', color: '#133888' , backgroundColor: '#f5ffff' , borderRadius: '3px' , border: '1px #133888 solid'}}type="number" value={quantity} onChange={handleQuantityChange} />
+        </div>
+        <div style={{display: 'flex', marginTop: '10px'}}>
+          <label className='label-excursion'>Группа :</label>
+          <select style={{fontSize: '20px', fontWeight: '600', color: '#133888', backgroundColor: '#f5ffff' , borderRadius: '3px' , border: '1px #133888 solid'}} value={value} onChange={handleValueChange}>
+            <option value="">Выберите группу</option>
+            { item?.prices?.map((el, index) => 
+              <option key={index} value={el.min_count}>{el.min_count}</option>)
+            }
+          </select>
+        </div>
       </div>
-      <div style={{display: 'flex', marginTop: '10px'}}>
-        <label className='label-excursion'>Группа :</label>
-        <select style={{fontSize: '20px', fontWeight: '600', color: '#133888', backgroundColor: '#f5ffff' , borderRadius: '3px' , border: '1px #133888 solid'}} value={value} onChange={handleValueChange}>
-          <option value="">Выберите группу</option>
-          { item?.prices?.map((el, index) => 
-            <option key={index} value={el.min_count}>{el.min_count}</option>)
-          }
-        </select>
-      </div>
-    </div>
-    <button onClick={addBasket} className='btn-excursion'>Добавить в корзину</button>
-    <Modal active={modalActive} setActive={setModalActive} item={item} name={item.name} />
-
+      <button onClick={addBasket} className='btn-excursion'>Добавить в корзину</button>
+      <Modal active={modalActive} setActive={setModalActive} item={item} name={item.name} />
     </div>
   )
 }

@@ -41,7 +41,7 @@ export default function ExcursionsPage() {
               </NavLink>
               )) : (<div>Loading...</div>)}
         </div>
-    <FooterNavigation/>
+      <FooterNavigation/>
     </>
   )
 }

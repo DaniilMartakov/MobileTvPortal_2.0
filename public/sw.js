@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 let doCache = false;
 let CACHE_NAME = 'my-pwa-cache-v0.1.01';
 

@@ -77,7 +77,7 @@ export default function BasketCard({item}) {
       <h5 className="card-title-basket">{item.product_name}</h5>
       <div style={{display: 'flex' , alignItems: 'center' ,justifyContent:'space-between', width:'30%',marginTop: '15px'}}>
         <button className="btn-basket" onClick={decrement} style={{paddingBottom: '5px'}}> - </button>
-          <h3 style={{margin: '0px' , fontSize:'20px'}}>{open ? item?.count : count}</h3>
+          <h3 className='count-basket' style={{margin: '0px' }}>{open ? item?.count : count}</h3>
         <button className="btn-basket" onClick={increment} style={{paddingBottom: '5px'}} > + </button>          
       </div>
     </div>

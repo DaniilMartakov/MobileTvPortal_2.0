@@ -27,4 +27,29 @@
 }
 
 @media screen and (min-width: 768px)  and (max-width: 2400px) {
+    .back-btn{
+        background-color: #f5ffff;
+        border: 0px;
+        font-size: xx-large;
+        color: #03256C;
+        padding: 0px;
+        position: fixed;
+        left: 0px; 
+        top :0px; 
+        z-index: 1;
+        margin: 0;     
+        z-index: 1;
+        text-align: center;
+        width: 79px;
+        height: 76px;
+        border-radius: 3px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px #133888 solid;
+        border-bottom: 2px #133888 solid;
+    }
 }

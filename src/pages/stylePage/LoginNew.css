@@ -1,3 +1,6 @@
+@media screen and (max-width: 768px){
+
+/* общий див  */
 .auth-general-div{
     display: flex;
     flex-direction: column;
@@ -16,8 +19,7 @@
     box-shadow: 5px 5px 0px 0px #133888;
     padding-bottom: 160px;
 }
-
-
+/* див заголовка */
 .auth-dow-div{
     display: flex;
     justify-content: space-between;
@@ -26,13 +28,7 @@
     padding: 15px;
     padding-top: 5px;
 }
-.auth-title{
-    font-size: xx-large;
-    font-weight: 700;
-    color: #133888;
-    margin: 0;
-    /* color: black; */
-}
+/* кнопка для скачивания */
 .auth-dow-btn{
     border-radius: 3px;
     padding: 10px;
@@ -45,7 +41,15 @@
     border: 1px solid #133888;
     box-shadow: 1px 1px 0px 0px #133888;
 }
+/* заголовок */
+.auth-title{
+    font-size: xx-large;
+    font-weight: 700;
+    color: #133888;
+    margin: 0;
+}
 
+/* див авторизации */
 .auth-input-div{
     display: flex;
     justify-content: space-between;
@@ -80,6 +84,7 @@
     display: flex;
     justify-content: center;   
 }
+/* кнопка авторизации  */
 .auth-sign-btn{
     display: flex;
     justify-content: space-around;
@@ -95,7 +100,7 @@
     font-weight: 600;
     box-shadow: 1px 1px 0px 0px #133888;
 }
-
+/* картинка коробля */
 .auth-img{
     width: 100%;
     height: auto;
@@ -106,4 +111,122 @@
     z-index: -1; 
     transform: scaleX(-1);
     filter: drop-shadow(3px 3px 5px);
+}
+}
+@media screen and (min-width: 768px)  and (max-width: 2400px) {
+    /* общий див  */
+.auth-general-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 465px;
+    height: 520px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 0px 0px #133888;
+    padding-bottom: 160px;
+}
+/* див заголовка */
+.auth-dow-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    padding-top: 5px;
+}
+/* кнопка для скачивания */
+.auth-dow-btn{
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #f5ffff;
+    color: #133888;
+    border: 0px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #133888;
+    box-shadow: 1px 1px 0px 0px #133888;
+}
+/* заголовок */
+.auth-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: #133888;
+    margin: 0;
+}
+
+/* див авторизации */
+.auth-input-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+
+}
+.auth-subtitle1{
+    font-weight: 500;
+    color: #133888;
+    font-size: xx-large;
+    /* color: black; */
+    margin: 0;
+}
+.auth-input{
+    width: 70px;
+    height: 100%;
+    border: 1.5px solid #133888;
+    border-radius: 3px;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: #ffffff;
+}
+.auth-input:focus{
+    outline: none;
+}
+.auth-input::placeholder{
+    color: #133888;
+}
+
+
+.auth-sign-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+/* кнопка авторизации  */
+.auth-sign-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 12px;
+    border-radius: 3px;
+    background-color: #f5ffff;
+    border: 1px solid #133888;
+    color: #133888;
+    font-size: x-large;
+    font-weight: 600;
+    box-shadow: 1px 1px 0px 0px #133888;
+}
+/* картинка коробля */
+.auth-img{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    bottom: -35px;
+    left: 75px;
+    opacity:0.7;
+    z-index: -1; 
+    transform: scaleX(-1);
+    filter: drop-shadow(3px 3px 5px);
+}
 }

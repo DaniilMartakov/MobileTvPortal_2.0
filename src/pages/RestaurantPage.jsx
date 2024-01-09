@@ -6,8 +6,6 @@ import OneCard from '../components/Menu_card/OneCard'
 import { useDispatch, useSelector } from 'react-redux'
 import { getBarThunk } from '../redux/actions/infoAction'
 import { getBasketThunk } from '../redux/actions/basketAction'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMartiniGlass, faMugHot, faUtensils, faWineGlass } from '@fortawesome/free-solid-svg-icons'
 import { Navigate } from 'react-router-dom'
 import BackButton from '../components/BackButton/BackButton'
 import Search from '../components/Tv_One_Card/Search'
@@ -85,30 +83,30 @@ if(!room){
 
     return (
     <>
-    <BackButton />
-    <Container>
-      <div>
-        <h1 className='menu-name'>РЕСТОРАН</h1> 
-      </div>
-      <div className='category-rest'>
-        <Search  handleSearch={handleSearch}/>
-        <select className='select-rest' value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="Все товары">Выберете категорию</option>
-        <option value="Все товары">Все</option>
-          {allCategory?.map((e) =><option key={e.id}>{e.name}</option>)}
-        </select>
-      </div>
-        <h3 className='type-name'>{selectedCategory}</h3>
-          {allCard?.length > 0 && !open ? 
-          (filteredMenu?.map((el) => (
-            <OneCard  el={el} key={el.id}/>
-          )))
-          : 
-          (filteredItems?.map((el) => (
-            <OneCard  el={el} key={el.id}/>
-          )))}
-    </Container>
-    <FooterNavigation />
+      <BackButton />
+      <Container>
+        <div>
+          <h1 className='menu-name'>РЕСТОРАН</h1> 
+        </div>
+        <div className='category-rest'>
+          <Search  handleSearch={handleSearch}/>
+          <select className='select-rest' value={selectedCategory} onChange={handleCategoryChange}>
+          <option value="Все товары">Выберете категорию</option>
+          <option value="Все товары">Все</option>
+            {allCategory?.map((e) =><option key={e.id}>{e.name}</option>)}
+          </select>
+        </div>
+          <h3 className='type-name'>{selectedCategory}</h3>
+            {allCard?.length > 0 && !open ? 
+            (filteredMenu?.map((el) => (
+              <OneCard  el={el} key={el.id}/>
+            )))
+            : 
+            (filteredItems?.map((el) => (
+              <OneCard  el={el} key={el.id}/>
+            )))}
+      </Container>
+      <FooterNavigation />
     </>
   )
 }

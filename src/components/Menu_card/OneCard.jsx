@@ -43,28 +43,28 @@ export default function OneCard({el}) {
 
   return (
   <>
-<div className="text-start">
-      <div className="card-body-rest" >
-          <div style={{display:'flex', justifyContent: 'space-between'}}>
-            <div style={{padding: '10px', paddingBottom:0}}>
-              <h5 className="card-title-menu">{el.name}</h5>
-              <p className='rest-price'>{el.price}руб.</p>
+    <div className="text-start">
+        <div className="card-body-rest" >
+            <div style={{display:'flex', justifyContent: 'space-between'}}>
+              <div style={{padding: '10px', paddingBottom:0}}>
+                <h5 className="card-title-menu">{el.name}</h5>
+                <p className='rest-price'>{el.price}руб.</p>
+              </div>
+                <img src={el.src} className='img-card-rest' alt='!#'/>
             </div>
-              <img src={el.src} className='img-card-rest' alt='!#'/>
+          <div className='div-count-rest'>
+            <div className='card-body-count-rest'>
+            <button className="btn-count-rest" onClick={decrement} style={{paddingLeft : '10px' , paddingRight: '10px', paddingBottom: '5px'}}> - </button>
+                    <h3 className='rest-count'>{count}</h3>
+            <button className="btn-count-rest" onClick={increment} style={{paddingLeft : '10px' , paddingRight: '10px',paddingBottom: '4px'}} > + </button>          
+            <button className="btnPrimary" onClick={addBasket}>
+              <FontAwesomeIcon className='rest-btn-icon'  icon={faBasketShopping} />
+            </button>
+            </div>
           </div>
-        <div className='div-count-rest'>
-          <div className='card-body-count-rest'>
-          <button className="btn-count-rest" onClick={decrement} style={{paddingLeft : '10px' , paddingRight: '10px', paddingBottom: '5px'}}> - </button>
-                  <h3 className='rest-count'>{count}</h3>
-          <button className="btn-count-rest" onClick={increment} style={{paddingLeft : '10px' , paddingRight: '10px',paddingBottom: '4px'}} > + </button>          
-          <button className="btnPrimary" onClick={addBasket}>
-            <FontAwesomeIcon className='rest-btn-icon'  icon={faBasketShopping} />
-          </button>
-          </div>
-        </div>
           <Modal active={modalActive} setActive={setModalActive} item={el} name={el.name} count={count}/>
+      </div>
     </div>
-  </div>
   </>
   )
 }
